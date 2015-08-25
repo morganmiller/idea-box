@@ -14,7 +14,7 @@
     <% @ideas.each do |idea| %>
       <div class="row row-centered">
       <div class="col-lg-8 col-centered" data-id="<%= idea.id %>">
-        <h2><%= idea.title %></h2>
+        <h2><a href='' onclick='return false' class='delete-idea'>(X)</a> <%= idea.title %></h2>
         <p><%= idea.body %></p>
         <p><%= idea.quality %></p>
       </div>
