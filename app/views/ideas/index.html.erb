@@ -16,7 +16,7 @@
       <div class="col-lg-8 col-centered" data-id="<%= idea.id %>">
         <h2><a href='' onclick='return false' class='delete-idea'>(X)</a> <%= idea.title %></h2>
         <p><%= idea.body %></p>
-        <p><%= idea.quality %></p>
+        <p><%= idea.quality %></p><a href="<%= edit_idea_path(idea) %>">Edit Idea</a>
       </div>
       </div>
     <% end %>
